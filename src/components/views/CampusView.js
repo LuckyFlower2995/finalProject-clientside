@@ -14,14 +14,17 @@ const CampusView = (props) => {
   return (
     <div>
       <h1>{campus.name}</h1>
+      <p>{campus.imageURL}</p>
       <p>{campus.address}</p>
       <p>{campus.description}</p>
+      
+      <h2>Students: </h2>
       {campus.students.map( student => {
         let name = student.firstname + " " + student.lastname;
         return (
           <div key={student.id}>
             <Link to={`/student/${student.id}`}>
-              <h2>{name}</h2>
+              <h3>{name}</h3>
             </Link>             
           </div>
         );
