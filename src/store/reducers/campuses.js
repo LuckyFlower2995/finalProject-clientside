@@ -12,7 +12,7 @@ const allCampuses = (state = [], action) => {  // Empty array as default Initial
   switch (action.type) {
     case at.FETCH_ALL_CAMPUSES:
       return action.payload;
-    case at.DELETE_STUDENT:
+    case at.DELETE_CAMPUS:
       return state.filter(campus => campus.id!==action.payload); //the change
     default:
       // If the Reducer doesn't recognize the Action Type, returns the previous (current) State unchanged.
