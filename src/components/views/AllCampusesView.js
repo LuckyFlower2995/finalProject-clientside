@@ -13,7 +13,7 @@ const AllCampusesView = (props) => {
   if (!props.allCampuses.length) {
     return (
       <div>
-        <p>There are no campuses.</p>
+        <p>There are no campuses. Add one!</p>
         <Link to={`newcampus`}>
         <button>Add New Campus</button>
       </Link>
@@ -35,8 +35,9 @@ const AllCampusesView = (props) => {
           <p>{campus.address}</p>
           <p>{campus.description}</p>
           <p>{campus.imageURL}</p>
-          <hr/>
+          <p></p>
           <button onClick={() => deleteCampus(campus.id)}>Delete</button>
+          <hr/>
         </div>
       ))}
       <br/>
@@ -51,7 +52,7 @@ const AllCampusesView = (props) => {
 // Validate data type of the props passed to component.
 AllCampusesView.propTypes = {
   allCampuses: PropTypes.array.isRequired,
-  deleteCampus: PropTypes.func.isRequired,
+  //deleteCampus: PropTypes.func.isRequired,
 };
 
 export default AllCampusesView;
