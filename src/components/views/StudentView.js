@@ -19,7 +19,7 @@ const StudentView = (props) => {
       <h2>Attends: </h2>
 
       <div key={student.campus.id}>
-        if(!student.campus.id) {
+        if(student.campus.id == 0) {
           <div>
             <p>They are not enrolled in a campus.</p>
           </div>
