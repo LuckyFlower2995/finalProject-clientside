@@ -22,12 +22,12 @@ const useStyles = makeStyles(theme => ({
     flexGrow: 1,
     textAlign: 'left',
     fontType: 'bold',
-    fontFamily: 'sans-serif', 
+    fontFamily: 'Tahoma', 
     fontSize: '35px', 
     color: 'darkblue'
   },
   appBar:{
-    backgroundColor: '#fcb6bb',
+    backgroundColor: '#71a7d1',
     shadows: ['none'],
   },
   greeting:{

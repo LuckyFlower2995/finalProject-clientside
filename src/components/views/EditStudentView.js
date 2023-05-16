@@ -12,7 +12,7 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles( () => ({
   formContainer:{  
     width: '500px',
-    backgroundColor: '#f0f0f5',
+    backgroundColor: '#e1ebf2',
     borderRadius: '5px',
     margin: 'auto',
   },
@@ -26,7 +26,7 @@ const useStyles = makeStyles( () => ({
     shadows: ['none'],
   },
   formTitle:{
-    backgroundColor:'#c5c8d6',
+    backgroundColor:'#71a7d1',
     marginBottom: '15px',
     textAlign: 'center',
     borderRadius: '5px 5px 0px 0px',
